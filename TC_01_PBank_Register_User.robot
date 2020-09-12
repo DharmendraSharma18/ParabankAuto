@@ -10,6 +10,7 @@ Register New User
     log to console  execute 1st test case
     kw_Launch_Parabank
     kw_To_Register_Page
-    kw_Enter_User_Details   ${td_User_Details_2}
-    kw_submit_User_Rgstr    ${td_User_Details_2}[8]
+    kw_Enter_User_Details   ${td_User_Details_5}
+    kw_submit_User_Rgstr    ${td_User_Details_5}[8]
+    Close browser
 

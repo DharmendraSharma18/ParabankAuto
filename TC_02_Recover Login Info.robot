@@ -8,7 +8,8 @@ Resource    Test_Data_and_OR/TestData_ParaBank.robot
 TC 02 Recover Login info
     kw_Launch_Parabank
     log to console  "Recover user info"
-    kw_Recover_forgotten_passwd     ${td_User1_Details}
+    kw_Recover_forgotten_passwd     ${td_User5_Details}
+    Close Browser
 
 
 

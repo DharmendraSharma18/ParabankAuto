@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.6.7 on win32)" generated="20191212 22:42:32.988" rpa="false">
-<suite id="s1" name="TC 01 PBank Register User" source="C:\Users\VickyWin10\PycharmProjects\Parabank_Auto\TC_01_PBank_Register_User.robot">
-<test id="s1-t1" name="Register New User">
+<robot generator="Robot 3.1.2 (Python 3.6.7 on win32)" generated="20200912 21:43:52.522" rpa="false">
+<suite id="s1" name="Parabank Auto" source="C:\Users\VickyWin10\Documents\PycharmProjects\Parabank_Auto">
+<suite id="s1-s1" name="TC 01 PBank Register User" source="C:\Users\VickyWin10\Documents\PycharmProjects\Parabank_Auto\TC_01_PBank_Register_User.robot">
+<test id="s1-s1-t1" name="Register New User">
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>execute 1st test case</arg>
 </arguments>
-<status status="PASS" starttime="20191212 22:42:33.469" endtime="20191212 22:42:33.470"></status>
+<status status="PASS" starttime="20200912 21:43:52.928" endtime="20200912 21:43:52.929"></status>
 </kw>
 <kw name="kw_Launch_Parabank" library="ParaBank_Keywords">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -16,8 +17,8 @@
 <arg>${TD_HOME_URL}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20191212 22:42:33.472" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com'.</msg>
-<status status="PASS" starttime="20191212 22:42:33.472" endtime="20191212 22:42:48.538"></status>
+<msg timestamp="20200912 21:43:52.931" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com'.</msg>
+<status status="PASS" starttime="20200912 21:43:52.931" endtime="20200912 21:44:03.485"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
@@ -26,16 +27,16 @@
 <arg>10s</arg>
 <arg>error='Parabank portal not opened'</arg>
 </arguments>
-<status status="PASS" starttime="20191212 22:42:48.538" endtime="20191212 22:42:48.562"></status>
+<status status="PASS" starttime="20200912 21:44:03.486" endtime="20200912 21:44:03.514"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>"Parabank Home page opened"</arg>
 </arguments>
-<status status="PASS" starttime="20191212 22:42:48.562" endtime="20191212 22:42:48.562"></status>
+<status status="PASS" starttime="20200912 21:44:03.514" endtime="20200912 21:44:03.515"></status>
 </kw>
-<status status="PASS" starttime="20191212 22:42:33.471" endtime="20191212 22:42:48.562"></status>
+<status status="PASS" starttime="20200912 21:43:52.930" endtime="20200912 21:44:03.516"></status>
 </kw>
 <kw name="kw_To_Register_Page" library="ParaBank_Keywords">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -43,8 +44,8 @@
 <arguments>
 <arg>${OR_Register}</arg>
 </arguments>
-<msg timestamp="20191212 22:42:48.565" level="INFO">Clicking element '//*[text()='Register' and @href]'.</msg>
-<status status="PASS" starttime="20191212 22:42:48.565" endtime="20191212 22:42:50.140"></status>
+<msg timestamp="20200912 21:44:03.518" level="INFO">Clicking element '//*[text()='Register' and @href]'.</msg>
+<status status="PASS" starttime="20200912 21:44:03.517" endtime="20200912 21:44:05.143"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
@@ -53,20 +54,20 @@
 <arg>5s</arg>
 <arg>error="Register Page not opened"</arg>
 </arguments>
-<status status="PASS" starttime="20191212 22:42:50.140" endtime="20191212 22:42:50.167"></status>
+<status status="PASS" starttime="20200912 21:44:05.144" endtime="20200912 21:44:05.164"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>"Register page opened"</arg>
 </arguments>
-<status status="PASS" starttime="20191212 22:42:50.167" endtime="20191212 22:42:50.167"></status>
+<status status="PASS" starttime="20200912 21:44:05.164" endtime="20200912 21:44:05.166"></status>
 </kw>
-<status status="PASS" starttime="20191212 22:42:48.564" endtime="20191212 22:42:50.167"></status>
+<status status="PASS" starttime="20200912 21:44:03.517" endtime="20200912 21:44:05.166"></status>
 </kw>
 <kw name="kw_Enter_User_Details" library="ParaBank_Keywords">
 <arguments>
-<arg>${td_User_Details_2}</arg>
+<arg>${td_User_Details_4}</arg>
 </arguments>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
@@ -74,16 +75,16 @@
 <arg>${OR_Register_Pg_Title}</arg>
 <arg>error='Not on Register Page'</arg>
 </arguments>
-<msg timestamp="20191212 22:42:50.186" level="INFO">Current page contains element '//*[@class='title'][text()="Signing up is easy!"]'.</msg>
-<status status="PASS" starttime="20191212 22:42:50.171" endtime="20191212 22:42:50.186"></status>
+<msg timestamp="20200912 21:44:05.180" level="INFO">Current page contains element '//*[@class='title'][text()="Signing up is easy!"]'.</msg>
+<status status="PASS" starttime="20200912 21:44:05.169" endtime="20200912 21:44:05.181"></status>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>${td_rgstr_Pg_Text}</arg>
 </arguments>
-<msg timestamp="20191212 22:42:50.213" level="INFO">Current page contains text 'If you have an account with us you can sign-up for free instant online access. You will have to provide some personal information.'.</msg>
-<status status="PASS" starttime="20191212 22:42:50.186" endtime="20191212 22:42:50.213"></status>
+<msg timestamp="20200912 21:44:05.208" level="INFO">Current page contains text 'If you have an account with us you can sign-up for free instant online access. You will have to provide some personal information.'.</msg>
+<status status="PASS" starttime="20200912 21:44:05.182" endtime="20200912 21:44:05.208"></status>
 </kw>
 <kw name="Get Length" library="BuiltIn">
 <doc>Returns and logs the length of the given item as an integer.</doc>
@@ -93,9 +94,9 @@
 <assign>
 <var>${length}</var>
 </assign>
-<msg timestamp="20191212 22:42:50.215" level="INFO">Length is 9</msg>
-<msg timestamp="20191212 22:42:50.215" level="INFO">${length} = 9</msg>
-<status status="PASS" starttime="20191212 22:42:50.214" endtime="20191212 22:42:50.215"></status>
+<msg timestamp="20200912 21:44:05.209" level="INFO">Length is 9</msg>
+<msg timestamp="20200912 21:44:05.209" level="INFO">${length} = 9</msg>
+<status status="PASS" starttime="20200912 21:44:05.208" endtime="20200912 21:44:05.209"></status>
 </kw>
 <kw name="${i} IN RANGE [ 0 | ${length} ]" type="for">
 <kw name="${i} = 0" type="foritem">
@@ -108,8 +109,8 @@
 <assign>
 <var>${value}</var>
 </assign>
-<msg timestamp="20191212 22:42:50.216" level="INFO">${value} = Dharam2</msg>
-<status status="PASS" starttime="20191212 22:42:50.216" endtime="20191212 22:42:50.216"></status>
+<msg timestamp="20200912 21:44:05.210" level="INFO">${value} = Dharam4</msg>
+<status status="PASS" starttime="20200912 21:44:05.210" endtime="20200912 21:44:05.210"></status>
 </kw>
 <kw name="Get From List" library="Collections">
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
@@ -120,8 +121,8 @@
 <assign>
 <var>${lctr}</var>
 </assign>
-<msg timestamp="20191212 22:42:50.216" level="INFO">${lctr} = //*[text()='First Name:']/following::td/input</msg>
-<status status="PASS" starttime="20191212 22:42:50.216" endtime="20191212 22:42:50.216"></status>
+<msg timestamp="20200912 21:44:05.210" level="INFO">${lctr} = //*[text()='First Name:']/following::td/input</msg>
+<status status="PASS" starttime="20200912 21:44:05.210" endtime="20200912 21:44:05.211"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -129,10 +130,10 @@
 <arg>${lctr}</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20191212 22:42:50.216" level="INFO">Typing text 'Dharam2' into text field '//*[text()='First Name:']/following::td/input'.</msg>
-<status status="PASS" starttime="20191212 22:42:50.216" endtime="20191212 22:42:50.384"></status>
+<msg timestamp="20200912 21:44:05.211" level="INFO">Typing text 'Dharam4' into text field '//*[text()='First Name:']/following::td/input'.</msg>
+<status status="PASS" starttime="20200912 21:44:05.211" endtime="20200912 21:44:05.379"></status>
 </kw>
-<status status="PASS" starttime="20191212 22:42:50.216" endtime="20191212 22:42:50.384"></status>
+<status status="PASS" starttime="20200912 21:44:05.209" endtime="20200912 21:44:05.380"></status>
 </kw>
 <kw name="${i} = 1" type="foritem">
 <kw name="Get From List" library="Collections">
@@ -144,8 +145,8 @@
 <assign>
 <var>${value}</var>
 </assign>
-<msg timestamp="20191212 22:42:50.384" level="INFO">${value} = TestLname2</msg>
-<status status="PASS" starttime="20191212 22:42:50.384" endtime="20191212 22:42:50.384"></status>
+<msg timestamp="20200912 21:44:05.381" level="INFO">${value} = TestLname</msg>
+<status status="PASS" starttime="20200912 21:44:05.380" endtime="20200912 21:44:05.381"></status>
 </kw>
 <kw name="Get From List" library="Collections">
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
@@ -156,8 +157,8 @@
 <assign>
 <var>${lctr}</var>
 </assign>
-<msg timestamp="20191212 22:42:50.384" level="INFO">${lctr} = //*[text()='Last Name:']/following::td/input</msg>
-<status status="PASS" starttime="20191212 22:42:50.384" endtime="20191212 22:42:50.384"></status>
+<msg timestamp="20200912 21:44:05.383" level="INFO">${lctr} = //*[text()='Last Name:']/following::td/input</msg>
+<status status="PASS" starttime="20200912 21:44:05.382" endtime="20200912 21:44:05.383"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -165,10 +166,10 @@
 <arg>${lctr}</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20191212 22:42:50.384" level="INFO">Typing text 'TestLname2' into text field '//*[text()='Last Name:']/following::td/input'.</msg>
-<status status="PASS" starttime="20191212 22:42:50.384" endtime="20191212 22:42:50.556"></status>
+<msg timestamp="20200912 21:44:05.384" level="INFO">Typing text 'TestLname' into text field '//*[text()='Last Name:']/following::td/input'.</msg>
+<status status="PASS" starttime="20200912 21:44:05.384" endtime="20200912 21:44:05.542"></status>
 </kw>
-<status status="PASS" starttime="20191212 22:42:50.384" endtime="20191212 22:42:50.556"></status>
+<status status="PASS" starttime="20200912 21:44:05.380" endtime="20200912 21:44:05.542"></status>
 </kw>
 <kw name="${i} = 2" type="foritem">
 <kw name="Get From List" library="Collections">
@@ -180,8 +181,8 @@
 <assign>
 <var>${value}</var>
 </assign>
-<msg timestamp="20191212 22:42:50.557" level="INFO">${value} = Test Address2</msg>
-<status status="PASS" starttime="20191212 22:42:50.557" endtime="20191212 22:42:50.558"></status>
+<msg timestamp="20200912 21:44:05.543" level="INFO">${value} = Test Address</msg>
+<status status="PASS" starttime="20200912 21:44:05.543" endtime="20200912 21:44:05.543"></status>
 </kw>
 <kw name="Get From List" library="Collections">
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
@@ -192,8 +193,8 @@
 <assign>
 <var>${lctr}</var>
 </assign>
-<msg timestamp="20191212 22:42:50.559" level="INFO">${lctr} = //*[text()='Address:']/following::td/input</msg>
-<status status="PASS" starttime="20191212 22:42:50.558" endtime="20191212 22:42:50.559"></status>
+<msg timestamp="20200912 21:44:05.544" level="INFO">${lctr} = //*[text()='Address:']/following::td/input</msg>
+<status status="PASS" starttime="20200912 21:44:05.544" endtime="20200912 21:44:05.545"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -201,10 +202,10 @@
 <arg>${lctr}</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20191212 22:42:50.559" level="INFO">Typing text 'Test Address2' into text field '//*[text()='Address:']/following::td/input'.</msg>
-<status status="PASS" starttime="20191212 22:42:50.559" endtime="20191212 22:42:50.751"></status>
+<msg timestamp="20200912 21:44:05.545" level="INFO">Typing text 'Test Address' into text field '//*[text()='Address:']/following::td/input'.</msg>
+<status status="PASS" starttime="20200912 21:44:05.545" endtime="20200912 21:44:05.708"></status>
 </kw>
-<status status="PASS" starttime="20191212 22:42:50.556" endtime="20191212 22:42:50.751"></status>
+<status status="PASS" starttime="20200912 21:44:05.542" endtime="20200912 21:44:05.708"></status>
 </kw>
 <kw name="${i} = 3" type="foritem">
 <kw name="Get From List" library="Collections">
@@ -216,8 +217,8 @@
 <assign>
 <var>${value}</var>
 </assign>
-<msg timestamp="20191212 22:42:50.752" level="INFO">${value} = Amsterdam2</msg>
-<status status="PASS" starttime="20191212 22:42:50.752" endtime="20191212 22:42:50.752"></status>
+<msg timestamp="20200912 21:44:05.709" level="INFO">${value} = Amsterdam</msg>
+<status status="PASS" starttime="20200912 21:44:05.708" endtime="20200912 21:44:05.709"></status>
 </kw>
 <kw name="Get From List" library="Collections">
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
@@ -228,8 +229,8 @@
 <assign>
 <var>${lctr}</var>
 </assign>
-<msg timestamp="20191212 22:42:50.752" level="INFO">${lctr} = //*[text()='City:']/following::td/input</msg>
-<status status="PASS" starttime="20191212 22:42:50.752" endtime="20191212 22:42:50.752"></status>
+<msg timestamp="20200912 21:44:05.710" level="INFO">${lctr} = //*[text()='City:']/following::td/input</msg>
+<status status="PASS" starttime="20200912 21:44:05.710" endtime="20200912 21:44:05.710"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -237,10 +238,10 @@
 <arg>${lctr}</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20191212 22:42:50.752" level="INFO">Typing text 'Amsterdam2' into text field '//*[text()='City:']/following::td/input'.</msg>
-<status status="PASS" starttime="20191212 22:42:50.752" endtime="20191212 22:42:50.915"></status>
+<msg timestamp="20200912 21:44:05.711" level="INFO">Typing text 'Amsterdam' into text field '//*[text()='City:']/following::td/input'.</msg>
+<status status="PASS" starttime="20200912 21:44:05.710" endtime="20200912 21:44:05.855"></status>
 </kw>
-<status status="PASS" starttime="20191212 22:42:50.752" endtime="20191212 22:42:50.915"></status>
+<status status="PASS" starttime="20200912 21:44:05.708" endtime="20200912 21:44:05.855"></status>
 </kw>
 <kw name="${i} = 4" type="foritem">
 <kw name="Get From List" library="Collections">
@@ -252,8 +253,8 @@
 <assign>
 <var>${value}</var>
 </assign>
-<msg timestamp="20191212 22:42:50.916" level="INFO">${value} = The Netherlands2</msg>
-<status status="PASS" starttime="20191212 22:42:50.915" endtime="20191212 22:42:50.916"></status>
+<msg timestamp="20200912 21:44:05.856" level="INFO">${value} = The Netherlands</msg>
+<status status="PASS" starttime="20200912 21:44:05.856" endtime="20200912 21:44:05.856"></status>
 </kw>
 <kw name="Get From List" library="Collections">
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
@@ -264,8 +265,8 @@
 <assign>
 <var>${lctr}</var>
 </assign>
-<msg timestamp="20191212 22:42:50.916" level="INFO">${lctr} = //*[text()='State:']/following::td/input</msg>
-<status status="PASS" starttime="20191212 22:42:50.916" endtime="20191212 22:42:50.916"></status>
+<msg timestamp="20200912 21:44:05.857" level="INFO">${lctr} = //*[text()='State:']/following::td/input</msg>
+<status status="PASS" starttime="20200912 21:44:05.856" endtime="20200912 21:44:05.857"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -273,10 +274,10 @@
 <arg>${lctr}</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20191212 22:42:50.916" level="INFO">Typing text 'The Netherlands2' into text field '//*[text()='State:']/following::td/input'.</msg>
-<status status="PASS" starttime="20191212 22:42:50.916" endtime="20191212 22:42:51.114"></status>
+<msg timestamp="20200912 21:44:05.858" level="INFO">Typing text 'The Netherlands' into text field '//*[text()='State:']/following::td/input'.</msg>
+<status status="PASS" starttime="20200912 21:44:05.857" endtime="20200912 21:44:06.013"></status>
 </kw>
-<status status="PASS" starttime="20191212 22:42:50.915" endtime="20191212 22:42:51.115"></status>
+<status status="PASS" starttime="20200912 21:44:05.855" endtime="20200912 21:44:06.013"></status>
 </kw>
 <kw name="${i} = 5" type="foritem">
 <kw name="Get From List" library="Collections">
@@ -288,8 +289,8 @@
 <assign>
 <var>${value}</var>
 </assign>
-<msg timestamp="20191212 22:42:51.116" level="INFO">${value} = 41254782</msg>
-<status status="PASS" starttime="20191212 22:42:51.115" endtime="20191212 22:42:51.116"></status>
+<msg timestamp="20200912 21:44:06.014" level="INFO">${value} = 4125478</msg>
+<status status="PASS" starttime="20200912 21:44:06.013" endtime="20200912 21:44:06.014"></status>
 </kw>
 <kw name="Get From List" library="Collections">
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
@@ -300,8 +301,8 @@
 <assign>
 <var>${lctr}</var>
 </assign>
-<msg timestamp="20191212 22:42:51.116" level="INFO">${lctr} = //*[text()='Zip Code:']/following::td/input</msg>
-<status status="PASS" starttime="20191212 22:42:51.116" endtime="20191212 22:42:51.116"></status>
+<msg timestamp="20200912 21:44:06.015" level="INFO">${lctr} = //*[text()='Zip Code:']/following::td/input</msg>
+<status status="PASS" starttime="20200912 21:44:06.014" endtime="20200912 21:44:06.015"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -309,10 +310,10 @@
 <arg>${lctr}</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20191212 22:42:51.116" level="INFO">Typing text '41254782' into text field '//*[text()='Zip Code:']/following::td/input'.</msg>
-<status status="PASS" starttime="20191212 22:42:51.116" endtime="20191212 22:42:51.270"></status>
+<msg timestamp="20200912 21:44:06.016" level="INFO">Typing text '4125478' into text field '//*[text()='Zip Code:']/following::td/input'.</msg>
+<status status="PASS" starttime="20200912 21:44:06.015" endtime="20200912 21:44:06.147"></status>
 </kw>
-<status status="PASS" starttime="20191212 22:42:51.115" endtime="20191212 22:42:51.271"></status>
+<status status="PASS" starttime="20200912 21:44:06.013" endtime="20200912 21:44:06.147"></status>
 </kw>
 <kw name="${i} = 6" type="foritem">
 <kw name="Get From List" library="Collections">
@@ -324,8 +325,8 @@
 <assign>
 <var>${value}</var>
 </assign>
-<msg timestamp="20191212 22:42:51.271" level="INFO">${value} = 1234567892</msg>
-<status status="PASS" starttime="20191212 22:42:51.271" endtime="20191212 22:42:51.271"></status>
+<msg timestamp="20200912 21:44:06.148" level="INFO">${value} = 123456789</msg>
+<status status="PASS" starttime="20200912 21:44:06.147" endtime="20200912 21:44:06.148"></status>
 </kw>
 <kw name="Get From List" library="Collections">
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
@@ -336,8 +337,8 @@
 <assign>
 <var>${lctr}</var>
 </assign>
-<msg timestamp="20191212 22:42:51.271" level="INFO">${lctr} = //*[text()='Phone #:']/following::td/input</msg>
-<status status="PASS" starttime="20191212 22:42:51.271" endtime="20191212 22:42:51.271"></status>
+<msg timestamp="20200912 21:44:06.149" level="INFO">${lctr} = //*[text()='Phone #:']/following::td/input</msg>
+<status status="PASS" starttime="20200912 21:44:06.148" endtime="20200912 21:44:06.149"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -345,10 +346,10 @@
 <arg>${lctr}</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20191212 22:42:51.271" level="INFO">Typing text '1234567892' into text field '//*[text()='Phone #:']/following::td/input'.</msg>
-<status status="PASS" starttime="20191212 22:42:51.271" endtime="20191212 22:42:51.432"></status>
+<msg timestamp="20200912 21:44:06.150" level="INFO">Typing text '123456789' into text field '//*[text()='Phone #:']/following::td/input'.</msg>
+<status status="PASS" starttime="20200912 21:44:06.149" endtime="20200912 21:44:06.288"></status>
 </kw>
-<status status="PASS" starttime="20191212 22:42:51.271" endtime="20191212 22:42:51.433"></status>
+<status status="PASS" starttime="20200912 21:44:06.147" endtime="20200912 21:44:06.288"></status>
 </kw>
 <kw name="${i} = 7" type="foritem">
 <kw name="Get From List" library="Collections">
@@ -360,8 +361,8 @@
 <assign>
 <var>${value}</var>
 </assign>
-<msg timestamp="20191212 22:42:51.433" level="INFO">${value} = ABCD122342</msg>
-<status status="PASS" starttime="20191212 22:42:51.433" endtime="20191212 22:42:51.433"></status>
+<msg timestamp="20200912 21:44:06.289" level="INFO">${value} = ABCD122343</msg>
+<status status="PASS" starttime="20200912 21:44:06.288" endtime="20200912 21:44:06.289"></status>
 </kw>
 <kw name="Get From List" library="Collections">
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
@@ -372,8 +373,8 @@
 <assign>
 <var>${lctr}</var>
 </assign>
-<msg timestamp="20191212 22:42:51.434" level="INFO">${lctr} = //*[text()='SSN:']/following::td/input</msg>
-<status status="PASS" starttime="20191212 22:42:51.434" endtime="20191212 22:42:51.434"></status>
+<msg timestamp="20200912 21:44:06.290" level="INFO">${lctr} = //*[text()='SSN:']/following::td/input</msg>
+<status status="PASS" starttime="20200912 21:44:06.289" endtime="20200912 21:44:06.290"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -381,10 +382,10 @@
 <arg>${lctr}</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20191212 22:42:51.434" level="INFO">Typing text 'ABCD122342' into text field '//*[text()='SSN:']/following::td/input'.</msg>
-<status status="PASS" starttime="20191212 22:42:51.434" endtime="20191212 22:42:51.610"></status>
+<msg timestamp="20200912 21:44:06.291" level="INFO">Typing text 'ABCD122343' into text field '//*[text()='SSN:']/following::td/input'.</msg>
+<status status="PASS" starttime="20200912 21:44:06.290" endtime="20200912 21:44:06.443"></status>
 </kw>
-<status status="PASS" starttime="20191212 22:42:51.433" endtime="20191212 22:42:51.610"></status>
+<status status="PASS" starttime="20200912 21:44:06.288" endtime="20200912 21:44:06.443"></status>
 </kw>
 <kw name="${i} = 8" type="foritem">
 <kw name="Get From List" library="Collections">
@@ -396,8 +397,8 @@
 <assign>
 <var>${value}</var>
 </assign>
-<msg timestamp="20191212 22:42:51.610" level="INFO">${value} = User_Dharam2</msg>
-<status status="PASS" starttime="20191212 22:42:51.610" endtime="20191212 22:42:51.610"></status>
+<msg timestamp="20200912 21:44:06.444" level="INFO">${value} = User_Dharam4</msg>
+<status status="PASS" starttime="20200912 21:44:06.443" endtime="20200912 21:44:06.444"></status>
 </kw>
 <kw name="Get From List" library="Collections">
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
@@ -408,8 +409,8 @@
 <assign>
 <var>${lctr}</var>
 </assign>
-<msg timestamp="20191212 22:42:51.610" level="INFO">${lctr} = //*[text()='Username:']/following::td/input</msg>
-<status status="PASS" starttime="20191212 22:42:51.610" endtime="20191212 22:42:51.610"></status>
+<msg timestamp="20200912 21:44:06.445" level="INFO">${lctr} = //*[text()='Username:']/following::td/input</msg>
+<status status="PASS" starttime="20200912 21:44:06.444" endtime="20200912 21:44:06.445"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -417,12 +418,12 @@
 <arg>${lctr}</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20191212 22:42:51.610" level="INFO">Typing text 'User_Dharam2' into text field '//*[text()='Username:']/following::td/input'.</msg>
-<status status="PASS" starttime="20191212 22:42:51.610" endtime="20191212 22:42:51.806"></status>
+<msg timestamp="20200912 21:44:06.446" level="INFO">Typing text 'User_Dharam4' into text field '//*[text()='Username:']/following::td/input'.</msg>
+<status status="PASS" starttime="20200912 21:44:06.445" endtime="20200912 21:44:06.595"></status>
 </kw>
-<status status="PASS" starttime="20191212 22:42:51.610" endtime="20191212 22:42:51.806"></status>
+<status status="PASS" starttime="20200912 21:44:06.443" endtime="20200912 21:44:06.595"></status>
 </kw>
-<status status="PASS" starttime="20191212 22:42:50.215" endtime="20191212 22:42:51.806"></status>
+<status status="PASS" starttime="20200912 21:44:05.209" endtime="20200912 21:44:06.595"></status>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <doc>Types the given password into the text field identified by ``locator``.</doc>
@@ -430,8 +431,10 @@
 <arg>${OR_Pswd_ip}</arg>
 <arg>Test1234</arg>
 </arguments>
-<msg timestamp="20191212 22:42:51.807" level="INFO">Typing password into text field '//*[text()='Password:']/following::td/input'.</msg>
-<status status="PASS" starttime="20191212 22:42:51.807" endtime="20191212 22:42:51.993"></status>
+<msg timestamp="20200912 21:44:06.595" level="INFO">Typing password into text field '//*[text()='Password:']/following::td/input'.</msg>
+<msg timestamp="20200912 21:44:06.681" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200912 21:44:06.762" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200912 21:44:06.595" endtime="20200912 21:44:06.763"></status>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <doc>Types the given password into the text field identified by ``locator``.</doc>
@@ -439,8 +442,10 @@
 <arg>${OR_Cnfm_Pswd_ip}</arg>
 <arg>Test1234</arg>
 </arguments>
-<msg timestamp="20191212 22:42:51.994" level="INFO">Typing password into text field '//*[text()='Confirm:']/following::td/input'.</msg>
-<status status="PASS" starttime="20191212 22:42:51.993" endtime="20191212 22:42:52.153"></status>
+<msg timestamp="20200912 21:44:06.763" level="INFO">Typing password into text field '//*[text()='Confirm:']/following::td/input'.</msg>
+<msg timestamp="20200912 21:44:06.827" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200912 21:44:06.899" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200912 21:44:06.763" endtime="20200912 21:44:06.899"></status>
 </kw>
 <kw name="Get From List" library="Collections">
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
@@ -451,29 +456,29 @@
 <assign>
 <var>${username}</var>
 </assign>
-<msg timestamp="20191212 22:42:52.153" level="INFO">${username} = User_Dharam2</msg>
-<status status="PASS" starttime="20191212 22:42:52.153" endtime="20191212 22:42:52.153"></status>
+<msg timestamp="20200912 21:44:06.900" level="INFO">${username} = User_Dharam4</msg>
+<status status="PASS" starttime="20200912 21:44:06.900" endtime="20200912 21:44:06.900"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${username}</arg>
 </arguments>
-<status status="PASS" starttime="20191212 22:42:52.153" endtime="20191212 22:42:52.153"></status>
+<status status="PASS" starttime="20200912 21:44:06.901" endtime="20200912 21:44:06.901"></status>
 </kw>
-<status status="PASS" starttime="20191212 22:42:50.170" endtime="20191212 22:42:52.153"></status>
+<status status="PASS" starttime="20200912 21:44:05.167" endtime="20200912 21:44:06.902"></status>
 </kw>
 <kw name="kw_submit_User_Rgstr" library="ParaBank_Keywords">
 <arguments>
-<arg>${td_User_Details_2}[8]</arg>
+<arg>${td_User_Details_4}[8]</arg>
 </arguments>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${OR_Submit_Rgstrn}</arg>
 </arguments>
-<msg timestamp="20191212 22:42:52.157" level="INFO">Clicking button '//*[text()='Confirm:']/following::tr/td/input[@class='button']'.</msg>
-<status status="PASS" starttime="20191212 22:42:52.153" endtime="20191212 22:42:54.576"></status>
+<msg timestamp="20200912 21:44:06.903" level="INFO">Clicking button '//*[text()='Confirm:']/following::tr/td/input[@class='button']'.</msg>
+<status status="PASS" starttime="20200912 21:44:06.903" endtime="20200912 21:44:07.655"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
@@ -481,7 +486,7 @@
 <arg>//*[@class="title"]</arg>
 <arg>5s</arg>
 </arguments>
-<status status="PASS" starttime="20191212 22:42:54.576" endtime="20191212 22:42:54.608"></status>
+<status status="PASS" starttime="20200912 21:44:07.655" endtime="20200912 21:44:07.676"></status>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
@@ -489,8 +494,8 @@
 <arg>//*[@class="title"]</arg>
 <arg>Welcome ${username}</arg>
 </arguments>
-<msg timestamp="20191212 22:42:54.644" level="INFO">Element '//*[@class="title"]' contains text 'Welcome User_Dharam2'.</msg>
-<status status="PASS" starttime="20191212 22:42:54.608" endtime="20191212 22:42:54.644"></status>
+<msg timestamp="20200912 21:44:07.707" level="INFO">Element '//*[@class="title"]' contains text 'Welcome User_Dharam4'.</msg>
+<status status="PASS" starttime="20200912 21:44:07.676" endtime="20200912 21:44:07.707"></status>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
@@ -498,8 +503,8 @@
 <arg>//*[@id="rightPanel"]/p</arg>
 <arg>Your account was created successfully. You are now logged in.</arg>
 </arguments>
-<msg timestamp="20191212 22:42:54.686" level="INFO">Element '//*[@id="rightPanel"]/p' contains text 'Your account was created successfully. You are now logged in.'.</msg>
-<status status="PASS" starttime="20191212 22:42:54.644" endtime="20191212 22:42:54.687"></status>
+<msg timestamp="20200912 21:44:07.746" level="INFO">Element '//*[@id="rightPanel"]/p' contains text 'Your account was created successfully. You are now logged in.'.</msg>
+<status status="PASS" starttime="20200912 21:44:07.707" endtime="20200912 21:44:07.746"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of the element identified by ``locator``.</doc>
@@ -509,8 +514,8 @@
 <assign>
 <var>${wlcome_msg}</var>
 </assign>
-<msg timestamp="20191212 22:42:54.714" level="INFO">${wlcome_msg} = Your account was created successfully. You are now logged in.</msg>
-<status status="PASS" starttime="20191212 22:42:54.687" endtime="20191212 22:42:54.714"></status>
+<msg timestamp="20200912 21:44:07.770" level="INFO">${wlcome_msg} = Your account was created successfully. You are now logged in.</msg>
+<status status="PASS" starttime="20200912 21:44:07.747" endtime="20200912 21:44:07.770"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of the element identified by ``locator``.</doc>
@@ -520,46 +525,440 @@
 <assign>
 <var>${wlcome_statement}</var>
 </assign>
-<msg timestamp="20191212 22:42:54.742" level="INFO">${wlcome_statement} = Welcome User_Dharam2</msg>
-<status status="PASS" starttime="20191212 22:42:54.714" endtime="20191212 22:42:54.742"></status>
+<msg timestamp="20200912 21:44:07.790" level="INFO">${wlcome_statement} = Welcome User_Dharam4</msg>
+<status status="PASS" starttime="20200912 21:44:07.770" endtime="20200912 21:44:07.790"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${wlcome_msg}</arg>
 </arguments>
-<status status="PASS" starttime="20191212 22:42:54.742" endtime="20191212 22:42:54.742"></status>
+<status status="PASS" starttime="20200912 21:44:07.790" endtime="20200912 21:44:07.791"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${wlcome_statement}</arg>
 </arguments>
-<status status="PASS" starttime="20191212 22:42:54.742" endtime="20191212 22:42:54.742"></status>
+<status status="PASS" starttime="20200912 21:44:07.791" endtime="20200912 21:44:07.792"></status>
 </kw>
-<status status="PASS" starttime="20191212 22:42:52.153" endtime="20191212 22:42:54.745"></status>
+<status status="PASS" starttime="20200912 21:44:06.902" endtime="20200912 21:44:07.792"></status>
 </kw>
 <tags>
 <tag>Functional</tag>
 </tags>
-<status status="PASS" starttime="20191212 22:42:33.468" endtime="20191212 22:42:54.745" critical="yes"></status>
+<status status="PASS" starttime="20200912 21:43:52.926" endtime="20200912 21:44:07.793" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20191212 22:42:32.991" endtime="20191212 22:42:54.749"></status>
+<status status="PASS" starttime="20200912 21:43:52.564" endtime="20200912 21:44:07.796"></status>
+</suite>
+<suite id="s1-s2" name="TC 02 Recover Login Info" source="C:\Users\VickyWin10\Documents\PycharmProjects\Parabank_Auto\TC_02_Recover Login Info.robot">
+<test id="s1-s2-t1" name="TC 02 Recover Login info">
+<kw name="kw_Launch_Parabank" library="ParaBank_Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${TD_HOME_URL}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200912 21:44:07.823" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com'.</msg>
+<status status="PASS" starttime="20200912 21:44:07.822" endtime="20200912 21:44:17.264"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${OR_Parabank_Logo}</arg>
+<arg>10s</arg>
+<arg>error='Parabank portal not opened'</arg>
+</arguments>
+<status status="PASS" starttime="20200912 21:44:17.264" endtime="20200912 21:44:17.301"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>"Parabank Home page opened"</arg>
+</arguments>
+<status status="PASS" starttime="20200912 21:44:17.302" endtime="20200912 21:44:17.302"></status>
+</kw>
+<status status="PASS" starttime="20200912 21:44:07.822" endtime="20200912 21:44:17.303"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>"Recover user info"</arg>
+</arguments>
+<status status="PASS" starttime="20200912 21:44:17.303" endtime="20200912 21:44:17.304"></status>
+</kw>
+<kw name="kw_Recover_forgotten_passwd" library="ParaBank_Keywords">
+<arguments>
+<arg>${td_User1_Details}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${OR_Forgot_Passwd}</arg>
+</arguments>
+<msg timestamp="20200912 21:44:17.306" level="INFO">Clicking element '//*[text()='Forgot login info?'][@href]'.</msg>
+<status status="PASS" starttime="20200912 21:44:17.306" endtime="20200912 21:44:19.701"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${OR_Fgot_Pswd_Title}</arg>
+<arg>"Forgot password page opened"</arg>
+</arguments>
+<msg timestamp="20200912 21:44:19.726" level="INFO">Current page contains element '//*[text()='Customer Lookup'][@class='title']'.</msg>
+<status status="PASS" starttime="20200912 21:44:19.701" endtime="20200912 21:44:19.726"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${OR_Fgot_Pswd_Lctr_List}</arg>
+</arguments>
+<assign>
+<var>${length}</var>
+</assign>
+<msg timestamp="20200912 21:44:19.727" level="INFO">Length is 7</msg>
+<msg timestamp="20200912 21:44:19.727" level="INFO">${length} = 7</msg>
+<status status="PASS" starttime="20200912 21:44:19.727" endtime="20200912 21:44:19.727"></status>
+</kw>
+<kw name="${i} IN RANGE [ 0 | ${length} ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${User_Info}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200912 21:44:19.728" level="INFO">${value} = Dharam</msg>
+<status status="PASS" starttime="20200912 21:44:19.728" endtime="20200912 21:44:19.728"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${OR_Fgot_Pswd_Lctr_List}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${lctr}</var>
+</assign>
+<msg timestamp="20200912 21:44:19.729" level="INFO">${lctr} = //*[text()='First Name:']/following::td/input</msg>
+<status status="PASS" starttime="20200912 21:44:19.728" endtime="20200912 21:44:19.729"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lctr}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200912 21:44:19.730" level="INFO">Typing text 'Dharam' into text field '//*[text()='First Name:']/following::td/input'.</msg>
+<status status="PASS" starttime="20200912 21:44:19.729" endtime="20200912 21:44:19.874"></status>
+</kw>
+<status status="PASS" starttime="20200912 21:44:19.728" endtime="20200912 21:44:19.874"></status>
+</kw>
+<kw name="${i} = 1" type="foritem">
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${User_Info}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200912 21:44:19.875" level="INFO">${value} = TestLname</msg>
+<status status="PASS" starttime="20200912 21:44:19.874" endtime="20200912 21:44:19.875"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${OR_Fgot_Pswd_Lctr_List}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${lctr}</var>
+</assign>
+<msg timestamp="20200912 21:44:19.875" level="INFO">${lctr} = //*[text()='Last Name:']/following::td/input</msg>
+<status status="PASS" starttime="20200912 21:44:19.875" endtime="20200912 21:44:19.876"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lctr}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200912 21:44:19.876" level="INFO">Typing text 'TestLname' into text field '//*[text()='Last Name:']/following::td/input'.</msg>
+<status status="PASS" starttime="20200912 21:44:19.876" endtime="20200912 21:44:20.024"></status>
+</kw>
+<status status="PASS" starttime="20200912 21:44:19.874" endtime="20200912 21:44:20.024"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${User_Info}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200912 21:44:20.025" level="INFO">${value} = Test Address</msg>
+<status status="PASS" starttime="20200912 21:44:20.024" endtime="20200912 21:44:20.025"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${OR_Fgot_Pswd_Lctr_List}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${lctr}</var>
+</assign>
+<msg timestamp="20200912 21:44:20.026" level="INFO">${lctr} = //*[text()='Address:']/following::td/input</msg>
+<status status="PASS" starttime="20200912 21:44:20.025" endtime="20200912 21:44:20.026"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lctr}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200912 21:44:20.026" level="INFO">Typing text 'Test Address' into text field '//*[text()='Address:']/following::td/input'.</msg>
+<status status="PASS" starttime="20200912 21:44:20.026" endtime="20200912 21:44:20.167"></status>
+</kw>
+<status status="PASS" starttime="20200912 21:44:20.024" endtime="20200912 21:44:20.167"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${User_Info}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200912 21:44:20.168" level="INFO">${value} = Amsterdam</msg>
+<status status="PASS" starttime="20200912 21:44:20.167" endtime="20200912 21:44:20.168"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${OR_Fgot_Pswd_Lctr_List}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${lctr}</var>
+</assign>
+<msg timestamp="20200912 21:44:20.169" level="INFO">${lctr} = //*[text()='City:']/following::td/input</msg>
+<status status="PASS" starttime="20200912 21:44:20.168" endtime="20200912 21:44:20.169"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lctr}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200912 21:44:20.170" level="INFO">Typing text 'Amsterdam' into text field '//*[text()='City:']/following::td/input'.</msg>
+<status status="PASS" starttime="20200912 21:44:20.169" endtime="20200912 21:44:20.315"></status>
+</kw>
+<status status="PASS" starttime="20200912 21:44:20.167" endtime="20200912 21:44:20.315"></status>
+</kw>
+<kw name="${i} = 4" type="foritem">
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${User_Info}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200912 21:44:20.316" level="INFO">${value} = The Netherlands</msg>
+<status status="PASS" starttime="20200912 21:44:20.316" endtime="20200912 21:44:20.317"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${OR_Fgot_Pswd_Lctr_List}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${lctr}</var>
+</assign>
+<msg timestamp="20200912 21:44:20.318" level="INFO">${lctr} = //*[text()='State:']/following::td/input</msg>
+<status status="PASS" starttime="20200912 21:44:20.317" endtime="20200912 21:44:20.318"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lctr}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200912 21:44:20.319" level="INFO">Typing text 'The Netherlands' into text field '//*[text()='State:']/following::td/input'.</msg>
+<status status="PASS" starttime="20200912 21:44:20.319" endtime="20200912 21:44:20.467"></status>
+</kw>
+<status status="PASS" starttime="20200912 21:44:20.315" endtime="20200912 21:44:20.467"></status>
+</kw>
+<kw name="${i} = 5" type="foritem">
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${User_Info}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200912 21:44:20.467" level="INFO">${value} = 4125478</msg>
+<status status="PASS" starttime="20200912 21:44:20.467" endtime="20200912 21:44:20.467"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${OR_Fgot_Pswd_Lctr_List}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${lctr}</var>
+</assign>
+<msg timestamp="20200912 21:44:20.468" level="INFO">${lctr} = //*[text()='Zip Code:']/following::td/input</msg>
+<status status="PASS" starttime="20200912 21:44:20.468" endtime="20200912 21:44:20.468"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lctr}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200912 21:44:20.469" level="INFO">Typing text '4125478' into text field '//*[text()='Zip Code:']/following::td/input'.</msg>
+<status status="PASS" starttime="20200912 21:44:20.468" endtime="20200912 21:44:20.617"></status>
+</kw>
+<status status="PASS" starttime="20200912 21:44:20.467" endtime="20200912 21:44:20.617"></status>
+</kw>
+<kw name="${i} = 6" type="foritem">
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${User_Info}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200912 21:44:20.619" level="INFO">${value} = 123456789</msg>
+<status status="PASS" starttime="20200912 21:44:20.617" endtime="20200912 21:44:20.619"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${OR_Fgot_Pswd_Lctr_List}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${lctr}</var>
+</assign>
+<msg timestamp="20200912 21:44:20.619" level="INFO">${lctr} = //*[text()='SSN:']/following::td/input</msg>
+<status status="PASS" starttime="20200912 21:44:20.619" endtime="20200912 21:44:20.619"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lctr}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200912 21:44:20.620" level="INFO">Typing text '123456789' into text field '//*[text()='SSN:']/following::td/input'.</msg>
+<status status="PASS" starttime="20200912 21:44:20.620" endtime="20200912 21:44:20.759"></status>
+</kw>
+<status status="PASS" starttime="20200912 21:44:20.617" endtime="20200912 21:44:20.759"></status>
+</kw>
+<status status="PASS" starttime="20200912 21:44:19.727" endtime="20200912 21:44:20.759"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${OR_Find_login_Info_btn}</arg>
+</arguments>
+<msg timestamp="20200912 21:44:20.760" level="INFO">Clicking button '//*[@type="submit"][@value="Find My Login Info"]'.</msg>
+<status status="PASS" starttime="20200912 21:44:20.759" endtime="20200912 21:44:21.468"></status>
+</kw>
+<status status="PASS" starttime="20200912 21:44:17.305" endtime="20200912 21:44:21.469"></status>
+</kw>
+<status status="PASS" starttime="20200912 21:44:07.821" endtime="20200912 21:44:21.470" critical="yes"></status>
+</test>
+<doc>Suite description</doc>
+<status status="PASS" starttime="20200912 21:44:07.800" endtime="20200912 21:44:21.472"></status>
+</suite>
+<suite id="s1-s3" name="TC 03 Verify links to logged in user" source="C:\Users\VickyWin10\Documents\PycharmProjects\Parabank_Auto\TC_03_Verify_links_to_logged_in_user.robot">
+<test id="s1-s3-t1" name="TC03 Verify features avaialble to logged in user">
+<kw name="kw_Launch_Parabank" library="ParaBank_Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${TD_HOME_URL}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200912 21:44:21.506" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com'.</msg>
+<status status="PASS" starttime="20200912 21:44:21.505" endtime="20200912 21:44:31.643"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${OR_Parabank_Logo}</arg>
+<arg>10s</arg>
+<arg>error='Parabank portal not opened'</arg>
+</arguments>
+<status status="PASS" starttime="20200912 21:44:31.643" endtime="20200912 21:44:31.676"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>"Parabank Home page opened"</arg>
+</arguments>
+<status status="PASS" starttime="20200912 21:44:31.677" endtime="20200912 21:44:31.678"></status>
+</kw>
+<status status="PASS" starttime="20200912 21:44:21.505" endtime="20200912 21:44:31.678"></status>
+</kw>
+<kw name="kw_Login_Parabank_User" library="ParaBank_Keywords">
+<arguments>
+<arg>${td_User3}</arg>
+<arg>Test1234</arg>
+</arguments>
+<msg timestamp="20200912 21:44:31.681" level="FAIL">Variable '${td_User3}' not found. Did you mean:
+    ${td_User4}</msg>
+<status status="FAIL" starttime="20200912 21:44:31.679" endtime="20200912 21:44:31.681"></status>
+</kw>
+<status status="FAIL" starttime="20200912 21:44:21.503" endtime="20200912 21:44:31.682" critical="yes">Variable '${td_User3}' not found. Did you mean:
+    ${td_User4}</status>
+</test>
+<doc>Suite description</doc>
+<status status="FAIL" starttime="20200912 21:44:21.476" endtime="20200912 21:44:31.686"></status>
+</suite>
+<status status="FAIL" starttime="20200912 21:43:52.524" endtime="20200912 21:44:31.692"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="2" fail="1">Critical Tests</stat>
+<stat pass="2" fail="1">All Tests</stat>
 </total>
 <tag>
 <stat pass="1" fail="0">Functional</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="TC 01 PBank Register User">TC 01 PBank Register User</stat>
+<stat pass="2" fail="1" id="s1" name="Parabank Auto">Parabank Auto</stat>
+<stat pass="1" fail="0" id="s1-s1" name="TC 01 PBank Register User">Parabank Auto.TC 01 PBank Register User</stat>
+<stat pass="1" fail="0" id="s1-s2" name="TC 02 Recover Login Info">Parabank Auto.TC 02 Recover Login Info</stat>
+<stat pass="0" fail="1" id="s1-s3" name="TC 03 Verify links to logged in user">Parabank Auto.TC 03 Verify links to logged in user</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20191212 22:42:33.445" level="ERROR">Error in file 'C:\Users\VickyWin10\PycharmProjects\Parabank_Auto\Keywords\ParaBank_Keywords.robot': Resource file 'TestData_ParaBank.robot' does not exist.</msg>
-<msg timestamp="20191212 22:42:33.449" level="ERROR">Error in file 'C:\Users\VickyWin10\PycharmProjects\Parabank_Auto\Keywords\ParaBank_Keywords.robot': Resource file 'OR_Parabank.robot' does not exist.</msg>
+<msg timestamp="20200912 21:43:52.909" level="ERROR">Error in file 'C:\Users\VickyWin10\Documents\PycharmProjects\Parabank_Auto\Keywords\ParaBank_Keywords.robot': Resource file 'TestData_ParaBank.robot' does not exist.</msg>
+<msg timestamp="20200912 21:43:52.912" level="ERROR">Error in file 'C:\Users\VickyWin10\Documents\PycharmProjects\Parabank_Auto\Keywords\ParaBank_Keywords.robot': Resource file 'OR_Parabank.robot' does not exist.</msg>
+<msg timestamp="20200912 21:44:07.810" level="ERROR">Error in file 'C:\Users\VickyWin10\Documents\PycharmProjects\Parabank_Auto\Keywords\ParaBank_Keywords.robot': Resource file 'TestData_ParaBank.robot' does not exist.</msg>
+<msg timestamp="20200912 21:44:07.813" level="ERROR">Error in file 'C:\Users\VickyWin10\Documents\PycharmProjects\Parabank_Auto\Keywords\ParaBank_Keywords.robot': Resource file 'OR_Parabank.robot' does not exist.</msg>
+<msg timestamp="20200912 21:44:21.489" level="ERROR">Error in file 'C:\Users\VickyWin10\Documents\PycharmProjects\Parabank_Auto\Keywords\ParaBank_Keywords.robot': Resource file 'TestData_ParaBank.robot' does not exist.</msg>
+<msg timestamp="20200912 21:44:21.491" level="ERROR">Error in file 'C:\Users\VickyWin10\Documents\PycharmProjects\Parabank_Auto\Keywords\ParaBank_Keywords.robot': Resource file 'OR_Parabank.robot' does not exist.</msg>
 </errors>
 </robot>
