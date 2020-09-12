@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TC_02_Recover Login Info.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TC_02_Recover Login Info.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TC_03_Verify_links_to_logged_in_user.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TC_03_Verify_links_to_logged_in_user.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Data_and_OR/TestData_ParaBank.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Test_Data_and_OR/TestData_ParaBank.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
