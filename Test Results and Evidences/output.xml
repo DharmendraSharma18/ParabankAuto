@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.6.7 on win32)" generated="20191019 09:47:52.092" rpa="false">
+<suite id="s1" name="TC1 Register User" source="C:\Users\Vicky\PycharmProjects\Parabank_Auto\TC1_Register_User.robot">
+<test id="s1-t1" name="Test title">
+<tags>
+<tag>Functional</tag>
+</tags>
+<status status="FAIL" starttime="20191019 09:47:52.978" endtime="20191019 09:47:52.979" critical="yes">Test case contains no keywords.</status>
+</test>
+<test id="s1-t2" name="Register New User">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${home_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20191019 09:47:52.985" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com'.</msg>
+<status status="PASS" starttime="20191019 09:47:52.984" endtime="20191019 09:48:07.963"></status>
+</kw>
+<status status="PASS" starttime="20191019 09:47:52.983" endtime="20191019 09:48:07.967" critical="yes"></status>
+</test>
+<doc>Suite description</doc>
+<status status="FAIL" starttime="20191019 09:47:52.096" endtime="20191019 09:48:07.982"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1">Critical Tests</stat>
+<stat pass="1" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1">Functional</stat>
+</tag>
+<suite>
+<stat pass="1" fail="1" id="s1" name="TC1 Register User">TC1 Register User</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
