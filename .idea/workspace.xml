@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85cedac1-e1f8-44d8-9493-d92b03b8f159" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TC_01_PBank_Register_User.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TC_01_PBank_Register_User.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TC_02_Recover Login Info.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TC_02_Recover Login Info.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TC_03_Verify_links_to_logged_in_user.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TC_03_Verify_links_to_logged_in_user.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test_Data_and_OR/TestData_ParaBank.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Test_Data_and_OR/TestData_ParaBank.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

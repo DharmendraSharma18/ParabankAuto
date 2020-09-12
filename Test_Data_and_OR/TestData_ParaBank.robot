@@ -10,5 +10,5 @@ ${td_home_url}    https://parabank.parasoft.com
 @{td_User_Details_5}     Dharam5   TestLname   Test Address    Amsterdam   The Netherlands     4125478     123456789    ABCD122343   User_Dharam5    abcd@1234   abcd@1234
 
 ${td_rgstr_Pg_Text}     If you have an account with us you can sign-up for free instant online access. You will have to provide some personal information.
-${td_User5}  User_Test_Dharam5
+${td_User4}  User_Test_Dharam4
 @{td_feature_links}
